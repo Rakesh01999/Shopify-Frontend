@@ -2,7 +2,7 @@
     {
         "productName": "Wireless Headphones",
         "image": "https://i.postimg.cc/PrxJ7dDM/61-PKmg-OKi-KL.jpg",
-        "brandName": "SoundMax",
+        "brandName": "SoundWave",
         "categoryName": "Electronics",
         "priceRange": "$50 - $100",
         "price": 79.99,
@@ -32,7 +32,7 @@
     {
         "productName": "Gaming Mouse",
         "image": "https://i.postimg.cc/3RxQwxYS/images-2.jpg",
-        "brandName": "GamerZone",
+        "brandName": "UltraTech",
         "categoryName": "Accessories",
         "priceRange": "$30 - $50",
         "price": 39.99,
@@ -62,7 +62,7 @@
     {
         "productName": "Smartwatch",
         "image": "https://i.postimg.cc/MZYtDm0Q/haylou-rs4-smart-watch-beauty-on-your-wrist-2022-02-05-61fe3183bf2e3.jpg",
-        "brandName": "WristTech",
+        "brandName": "ViewPlus",
         "categoryName": "Wearables",
         "priceRange": "$100 - $200",
         "price": 149.99,
@@ -72,7 +72,7 @@
     {
         "productName": "Tablet",
         "image": "https://i.postimg.cc/G3MGt7Jq/hq720.jpg",
-        "brandName": "TabMaster",
+        "brandName": "ViewPlus",
         "categoryName": "Electronics",
         "priceRange": "$200 - $400",
         "price": 299.99,
@@ -82,7 +82,7 @@
     {
         "productName": "External Hard Drive",
         "image": "https://i.postimg.cc/ht8GzhRc/adata-hd-330-3-500x500.jpg",
-        "brandName": "DataSafe",
+        "brandName": "TechPro",
         "categoryName": "Storage",
         "priceRange": "$50 - $100",
         "price": 89.99,
@@ -112,7 +112,7 @@
     {
         "productName": "Gaming Chair",
         "image": "https://i.postimg.cc/kGx5Q5RQ/lead-feature-image-1.jpg",
-        "brandName": "ComfortGamer",
+        "brandName": "BrewMaster",
         "categoryName": "Furniture",
         "priceRange": "$100 - $200",
         "price": 179.99,
@@ -142,7 +142,7 @@
     {
         "productName": "Electric Kettle",
         "image": "https://i.postimg.cc/YS9j5kT7/717k-DBz-Sa8-L-AC-UF894-1000-QL80.jpg",
-        "brandName": "QuickBoil",
+        "brandName": "BrewMaster",
         "categoryName": "Appliances",
         "priceRange": "$20 - $50",
         "price": 29.99,
@@ -172,7 +172,7 @@
     {
         "productName": "Blender",
         "image": "https://i.postimg.cc/kG9CdvDS/images-4.jpg",
-        "brandName": "MixMaster",
+        "brandName": "BrewMaster",
         "categoryName": "Appliances",
         "priceRange": "$50 - $100",
         "price": 59.99,
@@ -192,7 +192,7 @@
     {
         "productName": "LED TV",
         "image": "https://i.postimg.cc/5twkMdzP/images-6.jpg",
-        "brandName": "VisionPlus",
+        "brandName": "ViewPlus",
         "categoryName": "Electronics",
         "priceRange": "$300 - $500",
         "price": 399.99,
@@ -262,7 +262,7 @@
     {
         "productName": "Action Camera",
         "image": "https://i.postimg.cc/J40XwNXv/befunky-collage-1.jpg",
-        "brandName": "AdventureCam",
+        "brandName": "PhotoExpert",
         "categoryName": "Cameras",
         "priceRange": "$100 - $200",
         "price": 179.99,
@@ -312,7 +312,7 @@
     {
         "productName": "Electric Pressure Cooker",
         "image": "https://i.postimg.cc/W1D0ZGbg/pressure-cooker-2048px-9805.jpg",
-        "brandName": "QuickCook",
+        "brandName": "BriewMaster",
         "categoryName": "Appliances",
         "priceRange": "$50 - $100",
         "price": 79.99,
@@ -379,11 +379,10 @@
         "dateAdded": "2024-09-07",
         "Details": "Stay fascinated with this science-fiction book, offering a quite thrilling enjoyment."
     },
-
     {
         "productName": "Camera",
         "image": "https://i.postimg.cc/zf0QXL8y/4wp-Kr-H93-D37d-DPTisdq-Gy4.jpg",
-        "brandName": "FWs Cameras",
+        "brandName": "PhotoExpert",
         "categoryName": "Cameras",
         "priceRange": "$50 - $100",
         "price": 59.99,

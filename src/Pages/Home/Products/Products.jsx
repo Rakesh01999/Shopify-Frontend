@@ -30,8 +30,8 @@ const Products = () => {
 
     // ---------- claude 
     useEffect(() => {
-        // fetch('http://localhost:5000/products')
-        fetch('https://shopease-server-mauve.vercel.app/products')
+        fetch('http://localhost:5000/products')
+        // fetch('https://shopease-server-mauve.vercel.app/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -121,7 +121,7 @@ const Products = () => {
     };
 
     if (loading) {
-        return <div className="text-center py-10">Loading...</div>;
+        return <div className="text-center text-blue-500 font-bold py-10">Loading...</div>;
     }
 
     return (
@@ -142,7 +142,7 @@ const Products = () => {
                     />
                     <button
                         onClick={handleSearch}
-                        className="btn bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-400 hover:text-black transition duration-300"
+                        className="btn bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-sky-400 hover:text-black transition duration-300"
                     >
                         Search
                     </button>
@@ -242,7 +242,7 @@ const Products = () => {
                 {/* Apply Filters Button */}
                 <button
                     onClick={applyFilters}
-                    className="btn bg-orange-500 text-white hover:bg-yellow-300 hover:text-black px-4 py-2 rounded-lg transition duration-300 mt-4 sm:mt-0"
+                    className="btn bg-blue-500 text-white hover:bg-sky-300 hover:text-black px-4 py-2 rounded-lg transition duration-300 mt-4 sm:mt-0"
                 >
                     Apply Filters
                 </button>
@@ -261,13 +261,13 @@ const Products = () => {
 
             {/* Products Section */}
             {filteredProducts.length === 0 ? (
-                <p className="text-center text-orange-500 font-bold text-xl md:text-2xl">No products found matching the current filters or search query.</p>
+                <p className="text-center text-blue-500 font-bold text-xl md:text-2xl">No products found matching the current filters or search query.</p>
             ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {currentProducts.map(product => (
                         <div data-aos="zoom-out-up">
 
-                            <div key={product.id} className="bg-orange-200 border rounded-lg shadow-lg p-4 transition hover:shadow-2xl">
+                            <div key={product.id} className="bg-sky-300 border rounded-lg shadow-lg p-4 transition hover:shadow-2xl">
                                 <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-t-lg mb-4" />
                                 <h3 className="text-lg font-bold text-gray-800">{product.productName}</h3>
                                 <p className="text-gray-600 mt-2 flex"><span className='text-black font-semibold'>Brand:</span> {product.brandName || 'N/A'}</p>
@@ -309,12 +309,14 @@ const Products = () => {
                             {...item}
                             sx={{
                                 '&.Mui-selected': {
-                                    backgroundColor: 'orange', // Set the selected background color to orange
+                                    // backgroundColor: 'orange', // Set the selected background color to orange
+                                    backgroundColor: 'sky', // Set the selected background color to orange
                                     color: 'white', // Set the selected text color to white
                                     fontWeight: 'bold', // Make the selected item bold
                                 },
                                 '&.Mui-selected:hover': {
-                                    backgroundColor: 'darkorange', // Set a darker shade of orange on hover
+                                    // backgroundColor: 'darkorange', // Set a darker shade of orange on hover
+                                    backgroundColor: 'blue', // Set a darker shade of orange on hover
                                 },
                             }}
                             className={`page-item ${item.selected ? 'font-bold' : ''}`}

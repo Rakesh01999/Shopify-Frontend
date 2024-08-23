@@ -17,26 +17,26 @@ const MuiNavBar = () => {
     };
 
     return (
-        <div className="navbar bg-gradient-to-r from-orange-500 to-yellow-400 shadow-lg fixed top-0 w-full z-50 max-w-screen-xl mx-auto">
+        <div className="navbar bg-gradient-to-r from-blue-600 to-sky-400 shadow-lg fixed top-0 w-full z-50 max-w-screen-xl mx-auto">
             {/* <div className="navbar bg-gradient-to-r from-orange-500 to-yellow-400 shadow-lg fixed top-0 w-full z-50"> */}
             <div className="container mx-auto flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center">
-                <img src={logo} alt="Logo" className="bg-yellow-400 rounded-3xl h-16" />
-                <span className="ml-2 text-xl md:text-3xl text-white font-bold">Shop Ease</span>
+                <img src={logo} alt="Logo" className="bg-blue-400 rounded-3xl h-16" />
+                <span className="ml-2 text-xl md:text-3xl text-white font-bold">Shopify</span>
             </Link>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-4">
-                <Link to="/" className="btn btn-ghost bg-orange-500 text-white normal-case text-lg">Home</Link>
+                <Link to="/" className="btn btn-ghost bg-blue-600 text-white normal-case text-lg">Home</Link>
                 {/* Add other menu items here */}
                 {
                     user ? (
-                        <button onClick={handleLogOutClick} className="btn btn-ghost bg-orange-500 text-white normal-case text-lg">
+                        <button onClick={handleLogOutClick} className="btn btn-ghost bg-blue-600 text-white normal-case text-lg">
                             Log Out
                         </button>
                     ) : (
-                        <button onClick={() => navigate("/login")} className="btn btn-ghost normal-case text-lg">
+                        <button onClick={() => navigate("/login")} className="btn btn-ghost bg-blue-600 text-white normal-case text-lg">
                             Login
                         </button>
                     )

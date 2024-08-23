@@ -1,6 +1,6 @@
-# Shop Ease
+# Shopify
 
-**Live Site:** [Shop Ease](https://shopease-j.web.app/)
+**Live Site:** [Shopify](https://shopease-j.web.app/)
 
 ## Overview
 

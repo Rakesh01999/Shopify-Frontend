@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container mx-auto">
                 <Grid container spacing={4} className="">
                     <Grid item xs={12} sm={6} md={3} >
-                        <Typography variant="h6"  gutterBottom className="text-orange-200">
+                        <Typography variant="h6"  gutterBottom className="text-blue-300">
                             About Us
                         </Typography>
                         <Typography variant="body2" className="mb-4">
@@ -16,7 +16,7 @@ const Footer = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>
-                        <Typography variant="h6" gutterBottom className="text-orange-200">
+                        <Typography variant="h6" gutterBottom className="text-blue-300">
                             Contact
                         </Typography>
 
@@ -30,7 +30,7 @@ const Footer = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>
-                        <Typography variant="h6" gutterBottom className="text-orange-200">
+                        <Typography variant="h6" gutterBottom className="text-blue-300">
                             Quick Links
                         </Typography>
                         <ul className="space-y-2">
@@ -57,7 +57,7 @@ const Footer = () => {
                         </ul>
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>
-                        <Typography variant="h6" gutterBottom className="text-orange-200">
+                        <Typography variant="h6" gutterBottom className="text-blue-300">
                             Follow Us
                         </Typography>
                         {/* <div className="flex space-x-4 "> */}
@@ -74,9 +74,9 @@ const Footer = () => {
                         </div>
                     </Grid>
                 </Grid>
-                <Typography variant="body2" className="text-center mt-8 text-orange-200">
+                <Typography variant="body2" className="text-center mt-8 text-blue-200">
                     <div className="mt-10">
-                        &copy; {new Date().getFullYear()} Shop Ease. All rights reserved.
+                        &copy; {new Date().getFullYear()} Shopify. All rights reserved.
                     </div>
                 </Typography>
             </div>
