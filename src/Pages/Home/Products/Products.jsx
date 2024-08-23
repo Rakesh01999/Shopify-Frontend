@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 import { Pagination, PaginationItem } from '@mui/material';
+import ProductCard from '../../../Components/ProductCard/ProductCard';
 
 const Products = () => {
     const [products, setProducts] = useState([]);
@@ -31,7 +32,7 @@ const Products = () => {
     // ---------- claude 
     useEffect(() => {
         fetch('http://localhost:5000/products')
-        // fetch('https://shopease-server-mauve.vercel.app/products')
+            // fetch('https://shopease-server-mauve.vercel.app/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -122,6 +123,10 @@ const Products = () => {
 
     if (loading) {
         return <div className="text-center text-blue-500 font-bold py-10">Loading...</div>;
+    }
+
+    const handleOrder = (p) => {
+        console.log(p);
     }
 
     return (
@@ -265,18 +270,24 @@ const Products = () => {
             ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {currentProducts.map(product => (
-                        <div data-aos="zoom-out-up">
+                        <ProductCard key={product._id} product={product}></ProductCard>
 
-                            <div key={product.id} className="bg-sky-300 border rounded-lg shadow-lg p-4 transition hover:shadow-2xl">
-                                <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-t-lg mb-4" />
-                                <h3 className="text-lg font-bold text-gray-800">{product.productName}</h3>
-                                <p className="text-gray-600 mt-2 flex"><span className='text-black font-semibold'>Brand:</span> {product.brandName || 'N/A'}</p>
-                                <p className="text-gray-600 mt-1"><span className='text-black font-semibold'>Category:</span> {product.categoryName || 'N/A'}</p>
-                                <p className="text-gray-800 mt-1 font-semibold">Price: ${product.price.toFixed(2)}</p>
-                                <p className="text-gray-500 mt-1 text-sm"><span className='text-black font-semibold'>Date :</span> {new Date(product.dateAdded).toLocaleDateString()}</p>
-                                <p className="text-gray-500 mt-1 text-sm"><span className='text-black font-semibold'>Details:</span> {product.Details}</p>
-                            </div>
-                        </div>
+                        // <div data-aos="zoom-out-up">
+
+                        //     <div key={product.id} className="bg-sky-300 border rounded-lg shadow-lg p-4 transition hover:shadow-2xl">
+                        //         <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                        //         <h3 className="text-lg font-bold text-gray-800">{product.productName}</h3>
+                        //         <p className="text-gray-600 mt-2 flex"><span className='text-black font-semibold'>Brand:</span> {product.brandName || 'N/A'}</p>
+                        //         <p className="text-gray-600 mt-1"><span className='text-black font-semibold'>Category:</span> {product.categoryName || 'N/A'}</p>
+                        //         <p className="text-gray-800 mt-1 font-semibold">Price: ${product.price.toFixed(2)}</p>
+                        //         <p className="text-gray-500 mt-1 text-sm"><span className='text-black font-semibold'>Date :</span> {new Date(product.dateAdded).toLocaleDateString()}</p>
+                        //         <p className="text-gray-500 mt-1 text-sm"><span className='text-black font-semibold'>Details:</span> {product.Details}</p>
+                                
+                        //         <button onClick={handleOrder()} className='btn btn-info bg-blue-600 hover:rounded-sm rounded-3xl flex mx-auto text-white hover:bg-sky-300 hover:text-blue-600 mt-3'>Order</button>
+                                
+                        //     </div>
+                            
+                        // </div>
 
                     ))}
                 </div>
